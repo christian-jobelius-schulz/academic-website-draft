@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Christian Jobelius Schulz, PhD student in Econometrics at the University of Duisburg-Essen.">
+  <meta name="author" content="Christian Jobelius Schulz">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://christian-jobelius-schulz.github.io/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Christian Jobelius Schulz - PhD Student in Econometrics">
+  <meta property="og:description" content="Research in time-series econometrics, machine learning, and forecasting for macro-finance and energy.">
+  <meta property="og:url" content="https://christian-jobelius-schulz.github.io/">
+  <meta name="twitter:card" content="summary">
+  <title>Christian Jobelius Schulz - PhD Student</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Christian Jobelius Schulz",
+    "url": "https://christian-jobelius-schulz.github.io/",
+    "jobTitle": "PhD student in Econometrics",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Duisburg-Essen",
+      "url": "https://www.uni-due.de/en/"
+    },
+    "sameAs": [
+      "https://www.oek.wiwi.uni-due.de/en/team/christian-schulz",
+      "https://www.linkedin.com/in/christian-schulz-2366971a4/",
+      "https://orcid.org/0009-0001-2147-1851"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main class="page" id="top">
+      <aside class="sidebar" id="contact">
+        <h1 data-field="name">Christian Jobelius Schulz</h1>
+        <img id="portrait" alt="Portrait" hidden>
+        <div class="monogram" id="monogram" aria-hidden="true" hidden>YN</div>
+        <p class="profile-name" data-field="role">Economist &middot; Researcher</p>
+        <p class="profile-role" data-field="affiliation">Your University</p>
+        <dl id="contact-list"></dl>
+        <div class="socials" id="social-links"></div>
+      </aside>
+      <div class="content">
+        <section id="about">
+          <h2>Welcome!</h2>
+          <p class="intro" data-field="bio">Add your CV to populate this profile automatically.</p>
+          <p class="tagline" data-field="tagline">Researching the forces that shape the economy.</p>
+        </section>
+        <hr>
+        <section class="cv-section">
+          <h2><a id="cv-link" href="content/cv.pdf">Curriculum Vitae</a></h2>
+        </section>
+        <hr>
+        <section class="research" id="research">
+          <div class="papers" id="paper-list" aria-live="polite"></div>
+        </section>
+      </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> <span data-field="name">Your Name</span></p>
+  </footer>
+
+  <template id="paper-template">
+    <article class="paper">
+      <div class="paper-summary">
+        <span class="paper-number" hidden></span>
+        <span class="paper-main">
+          <span class="paper-title"></span> <button class="abstract-button" type="button" aria-expanded="false">[click for abstract]</button>
+          <span class="paper-authors"></span>
+          <span class="paper-venue"></span>
+        </span>
+      </div>
+      <div class="paper-detail" hidden>
+        <p class="paper-abstract"></p>
+        <div class="paper-links"></div>
+      </div>
+    </article>
+  </template>
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  color: #222;
+  background: white;
+  font: 14px/1.55 Arial, Helvetica, sans-serif;
+}
+
+a { color: #174f87; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.page {
+  max-width: 850px;
+  margin: 40px auto 36px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 235px 1fr;
+  gap: 46px;
+}
+
+h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: normal; }
+.sidebar h1 { margin: 0 0 17px; font-size: 23px; line-height: 1.2; white-space: nowrap; }
+.sidebar img { width: 200px; max-width: 100%; height: auto; margin: 0 0 15px; }
+.monogram { display: none; }
+.profile-name { margin: 0; font-weight: bold; }
+.profile-role { margin: 2px 0 15px; }
+dl { margin: 0; }
+dt { margin-top: 9px; font-size: 12px; }
+dd { margin: 0; overflow-wrap: anywhere; }
+.socials { margin-top: 14px; }
+.socials a { display: block; }
+
+.content { padding-top: 0; font-size: 15px; line-height: 1.6; }
+h2 { margin: 0 0 14px; font-size: 22px; line-height: 1.25; }
+.intro, .tagline { margin: 0 0 11px; }
+.tagline { color: inherit; }
+.tagline:empty { display: none; }
+hr { margin: 28px 0; border: 0; border-top: 1px solid #ddd; }
+
+.paper-group + .paper-group { margin-top: 32px; padding-top: 28px; border-top: 1px solid #ddd; }
+.paper-group h2 { margin-bottom: 20px; }
+
+.paper { margin-bottom: 24px; }
+.paper + .paper { padding-top: 24px; border-top: 1px solid #ddd; }
+.paper-summary { width: 100%; padding: 0; color: inherit; text-align: left; }
+.abstract-button { padding: 0; border: 0; background: none; color: #444; text-align: left; font: inherit; font-size: 11px; cursor: pointer; }
+.abstract-button:hover { text-decoration: underline; }
+.paper-main { display: block; }
+.paper-title { color: inherit; font-size: 15.5px; line-height: 1.4; font-weight: bold; }
+.paper-authors, .paper-venue { display: block; margin-top: 4px; line-height: 1.45; }
+.paper-venue { font-style: normal; }
+.paper-detail { margin-top: 12px; }
+.paper-abstract { margin: 0; }
+.paper-links { margin-top: 7px; }
+.paper-links a { margin-right: 12px; font-size: 12px; }
+
+footer { max-width: 850px; margin: 0 auto; padding: 0 20px 25px; font-size: 11px; }
+footer p { margin: 0; }
+
+@media (max-width: 620px) {
+  .page { grid-template-columns: minmax(0, 1fr); gap: 30px; margin: 24px auto 30px; padding: 0 16px; }
+  .sidebar h1 { white-space: normal; }
+  .sidebar img { width: 180px; }
+  .content { padding-top: 0; }
+  h2 { font-size: 21px; }
+  hr { margin: 24px 0; }
+  .paper-group + .paper-group { margin-top: 27px; padding-top: 24px; }
+  .paper { margin-bottom: 21px; }
+  .paper + .paper { padding-top: 21px; }
+  .abstract-button { display: inline-block; padding: 3px 0; }
+  .paper-links a { display: inline-block; padding: 3px 0; }
+  footer { padding: 0 16px 22px; }
+}
